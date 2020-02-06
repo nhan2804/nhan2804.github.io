@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anime | Website xem anime miễn phí</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="pic1.jpg">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="cart" onclick="cart()" class="w3-sidebar w3-bar-block w3-animate-right w3-right" style="width: 40px;height: 40px; position: absolute; left: 98%; top :58px;">
+		<img  class=""  src="cart.png" width="40px" height="40px">
+	</div>
+	  <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left w3-gray bar" style="width: 15%;" id="mySidebar">
+	  <a href="#" class="w3-bar-item w3-button ">List Favories <span class="w3-button w3-display-topright w3-hover-red" id="close"><i class="fas fa-times"></i></span>
+	  </a>
+	  <div class="sidebar"><span><a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green"><span><i class="fas fa-thumbtack"></i></span><span class="title">
+	  	 Bring Back The Summer
+	  </span></a></span>
+	  <ul class="list">
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  	</ul>
+	  </div>
+	  <div class="sidebar"><span><a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green"><span><i class="fas fa-thumbtack"></i></span> Wake Me Up</a>
+	  </span>
+	  <ul class="list">
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  	</ul>
+	  </div>
+	  <div class="sidebar"><span><a  href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-green "><span><i class="fas fa-thumbtack"></i></span> Sublime Text</a></span>
+	  	<ul class="list">
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  		<li><a href="#">Link1</a></li>
+	  	</ul>
+	  </div>
+	  </div> 
+
+
+
+
+
+
+
+
+
+
+	  <!-- Toppppppp -->
+	<div id="top">
+		<div class="w3-container w3-row w3-animate-left">
+			<div class="w3-third w3-block ">
+				<a href="" class=""><img src="sc.png" title="Trang chủ"></a>
+				<button id="side" class="w3-bar-item w3-button  "><i class="fas fa-bars"></i></button>
+			</div>
+			<div class="w3-twothird ">
+				<div class="w3-container w3-row">
+					<div class="w3-thirdquarter ">
+						<div class="w3-container ">
+							<!-- <h2>       </h2> -->
+							<!-- <h2>       </h2> -->
+						</div>
+					</div>
+					<div class="w3-quarter w3-right ">
+						<div id="time" class="w3-topright"></div>
+						<div id="date" class="w3-topright"></div>
+						<a href="#" class="w3-bar-item w3-button w3-border" onclick="document.getElementById('modal').style.display='block';">Login<i class="glyphicon glyphicon-user"></i></a>
+						<a href="#" class="w3-bar-item w3-button w3-border">Re<span class="w3-tag w3-red w3-round w3-animate-fading">new</span></a>
+						<div id="modal" class="w3-modal ">
+							<div class="w3-gray w3-modal-content w3-card-4 w3-animate-top w3-card-4 w3-round" style="width: 400px;">
+							<div class="w3-container " style="position: absolute; top:200px;">
+								<div class="w3-container w3-blue w3-left w3-medium w3-round">Đăng Nhập<span class="w3-button w3-display-topright w3-gray" onclick="document.getElementById('modal').style.display='none';">Thoát <i class="far fa-window-close"></i></a>
+								</span>
+								</div>
+								<!-- Formmmmm -->
+								<div class="w3-container w3-medium box">
+									<form action="#">
+										<h1>Login</h1>
+										<input type="text" name="use" placeholder="Username" required>
+										<input type="password" name="pass" placeholder="Password" required>
+										<input type="submit" name="" value="Login">
+									</form>
+								</div>
+								<!-- <div class="w3-container w3-medium" style="margin: 0px;">
+									<form>
+									<p>
+								  <label class="w3-text-yellow">Tên tài khoản</label>
+								  <input class="w3-input" type="text"></p>
+								  <p>
+								  <label class="w3-text-yellow">Mật Khẩu</label>
+								  <input class="w3-input" type="text"></p>
+								  <p>
+								</form>
+								<div class="w3-container w3-right ">
+									<a href="#" class="w3-bar-item w3-button w3-round">Đăng nhập</a>
+									</div>
+								</div> -->
+								<!-- End Formmmmm -->
+								
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="w3-bar w3-black w3-medium ">
+		<a href="#" class="w3-bar-item w3-button "><i class="fas fa-film"></i>Anime</a>
+		<a href="#" class="w3-bar-item w3-button w3-hover-red"><i class="fab fa-accusoft"></i>Manga</a>
+			<div class="w3-dropdown-hover">
+			<button class="w3-button w3-tooltip w3-hover-green">Manhua <i class="fas fa-angle-down"></i><span class="w3-text">(<em>Korea</em>)</span></button>
+			 <div class="w3-dropdown-content w3-bar-block w3-card-4 ">
+        	<a href="#" class="w3-bar-item w3-button w3-text-orange">Nettruyen</a>
+        	<a href="#" class="w3-bar-item w3-button w3-text-orange">Truyenqq</a>
+        	<a href="#" class="w3-bar-item w3-button w3-text-orange">Pinterest</a>
+     		</div>
+      		</div>
+		</i></a>
+		<a href="#" class="w3-bar-item w3-button w3-hover-yellow"><i class="fas fa-book"></i> LightNovel</a>
+		<a href="#" class="w3-bar-item w3-button w3-hover-black"><i class="fas fa-equals"></i> Novel</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-gray"><i class="fas fa-align-left"></i> Thể Loại</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white"><i class="fas fa-vote-yea"></i> Năm</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fas fa-eye"></i> Xem Nhiều</a>
+		<a href="#bot1" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-orange"><i class="fas fa-eject"></i> Giới Thiệu</a>
+		<input class="w3-input w3-bar-item w3-hide-small w3-hide-medium" type="text" placeholder="Nhập tên phim, diễn viên để tìm" />
+		<a  href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><i class="fas fa-search"></i> Tìm</a>
+		<a href="javascript:void(0) " class="w3-bar-item w3-button w3-right w3-hide-large " onclick="nav()">&#9776;</a>
+	</div>
+	<div id="nav" class="w3-bar-block w3-teal w3-medium w3-hide-large w3-hide w3-animate-left">
+		<a href="#" class="w3-bar-item w3-button "><i class="fas fa-align-left"></i> Thể Loại</a>
+		<a href="#" class="w3-bar-item w3-button "><i class="fas fa-vote-yea"></i> Năm</a>
+		<a href="#" class="w3-bar-item w3-button "><i class="fas fa-eye"></i> Xem Nhiều</a>
+		<a href="#" class="w3-bar-item w3-button "><i class="fas fa-eject"></i> Giới Thiệu</a>
+		<input class="w3-input w3-bar-item " type="text" placeholder="Nhập tên phim, diễn viên để tìm" />
+		<a  href="#" class="w3-bar-item w3-button"><i class="fas fa-search"></i> Tìm</a>
+	</div>
+	</div>
+
+
+
+	<!-- Mainnnnnnnnnnnnnnnn -->
+	<div id="main" class="w3-row w3-container w3-panel w3-white w3-animate-left">
+		<div class="w3-twothird">
+			<div class="w3-content w3-display-container w3-animate-left">
+			    <a href="#"><img src="slide1.png" width="100%" class="slide" ></a>
+				<a href="#"><img src="slide2.png" width="100%" class="slide" ></a>
+				<a href="#"><img src="slide3.png" width="100%" class="slide" ></a>
+				<a href="#"><img src="slide4.png" width="100%" class="slide" ></a>
+				<a href="#"><img src="slide5.png" width="100%" class="slide" ></a>
+				<button class="w3-button w3-black w3-display-left" onclick="push(-1)">&#10094;</button>
+				<button class="w3-button w3-black w3-display-right" onclick="push(1)">&#10095;</button>
+			</div>
+			<div class="w3-container w3-panel w3-animate-left">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.<br/>
+				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.<br/><hr>
+				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.<br/><hr>
+				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.Lo<br/><hr> p.hehe
+				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
+
+			</div>
+			<div class="w3-container w3-panel">
+				<h3><a href="https://www.youtube.com/watch?v=P9bAQg47i-c" target="blank" title="Youtube-Bring Back The Summer"><span><i class="fas fa-music"></i></span>  AMV - Bring Back The Summer</a></h3>
+				<video loop autoplay width="100%" controls>
+  				<source src="video1.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<div class="w3-third">
+		<div class="w3-content w3-container w3-animate-left">
+		<div class="w3-bar w3-teal">
+			<button class="w3-bar-item w3-button" onclick ="opentab('t1')">Tab1</button>
+			<button class="w3-bar-item w3-button" onclick="opentab('t2')">Tab2</button>
+			<button class="w3-bar-item w3-button" onclick="opentab('t3')">Tab3</button>
+		</div>
+		<div id="t1" class="w3-container w3-card w3-round w3-border w3-animate-right tab">
+			<h2>Thiết kế web</h2>
+			<p>Microsoft Word Microsoft Excel Microsoft PowerPoint Google Driver Tutorial Bài giảng e-Learning Bảng tương tác ActiveInspire Photoshop cơ bản Photoshop nâng cao Adobe Illustrator Corel Draw X7 Adobe Audition Adobe Premiere Adobe AfterEffect Thiết kế website Thực hành Jquery Bootstrap CSS FrameWork W3 CSS FrameWork PHP cơ bản PHP OOP hướng đối tượng PHP XD website tin tức Laravel Framework PHP C# cơ bản C# Windows Form C# Mô hình 3 lớp C# XD phần mềm QLĐ C# XD Website Tin tức Các bản tin hoạt động Karaoke, ca nhạc, giải trí Liên hoan tiếng hát giáo viên 2016 Cụm Sư phạm Trung Bắc 2016 Chơi Game Đỗ Ngọc Sơn Cài đặt Adobe Cài đặt photoshop Cài đặt illustrator Cài đặt premiere Cài đặt after effect</p>
+		</div>
+		<div id="t2" class="w3-container w3-card w3-round w3-border w3-animate-right tab" style="display: none;">
+			<h2>PHP cơ bản</h2>
+			<p>ính sách sinh viên học kỳ 1 năm học 2019-2020 - 30/09/2019
+			Điều động sinh viên tham dự "Chuỗi các hoạt động Khoa học, Sáng tạo và Khởi nghiệp" - 24/09/2019
+			Điều động sinh viên tham dự "Lễ khai giảng năm học 2019 - 2020" - 18/09/2019
+			Lịch tổ chức Sinh hoạt công dân năm học 2019-2020 - 27/08/2019
+			Thông báo V/v nhận và trả giấy xác nhận sinh viên và giấy vay vốn 2019 - 27/08/2019
+			Xem Thêm 
+			Thông báo về Công tác tài chính
+			Thu học phí học kỳ 2 và các khoản thu khác của sinh viên năm học 2019-2020 - 27/12/2</p>
+		</div>
+		<div id="t3" class="w3-container w3-card w3-round  w3-border w3-animate-right tab" style="display: none;">
+			<h2>Hướng đối tượng PHP</h2>
+			<p>hông báo về việc nhận thẻ BẢO HIỂM Y TẾ ĐỐI VỚI KHÓA 19 KHOA CNTT&TT - 15/10/2019
+			Hướng dẫn thực hiện các chính sách sinh viên học kỳ 1 năm học 2019-2020 - 30/09/2019
+			Điều động sinh viên tham dự "Chuỗi các hoạt động Khoa học, Sáng tạo và Khởi nghiệp" - 24/09/2019
+			Điều động sinh viên tham dự "Lễ khai giảng năm học 2019 - 2020" - 18/09/2019
+			Lịch tổ chức Sinh hoạt công dân năm học 2019-2020 - 27/08/2019
+			Thông báo V/v nhận và trả giấy xác nhận sinh viên và giấy vay vốn 2019 - 27/08/2019</p>
+		</div>
+	</div>
+		<div class="w3-container w3-panel w3-animate-left">
+		<div class="w3-green w3-container w3-center">
+			<h4>Truy cập nhiều  <i class="fa fa-spinner w3-spin" style="font-size:32px"></i></h4>
+		</div>
+		<div class="w3-bar-block w3-card-4 w3-round">
+			<a href="#" class="w3-bar-item w3-button ">1.Dawn's Game</a>
+			<a href="#" class="w3-bar-item w3-button ">2.Plunde</a>
+			<a href="#" class="w3-bar-item w3-button ">3.One Puch Man</a>
+			<a href="#" class="w3-bar-item w3-button ">5.Yandere</a>
+		</div>
+		</div>
+		<!-- <div class="w3-container w3-panel w3-animate-left">
+			<div class="w3-center w3-card-4 w3-round">
+				<img src="nice.jpg">
+			</div>
+		</div> -->
+		</div>
+
+	</div>
+
+	<div class="container">
+		<ul class="pagination justify-content-end">
+		    <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+		    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+		    <li class="page-item"><a href="#" class="page-link">2</a></li>
+		    <li class="page-item"><a href="#" class="page-link">3</a></li>
+		    <li class="page-item"><a href="#" class="page-link">4</a></li>
+		    <li class="page-item"><a href="#" class="page-link">5</a></li>
+		    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+		</ul>
+	</div>
+	<!-- Botttttttttttttttttom -->
+	<div id="bot1" class="bot">
+			<div class="container w3-animate-left">
+				<div class="row ">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+						<h2>About Ours</h2><hr>
+						<p><a class="ho" href="#">Carrier</a></p>
+						<p><a class="ho" href="#">Suport</a></p>
+						<p><a class="ho" href="#">Yaaaaa</a></p>
+						<p><a class="ho" href="#">About</a></p>
+						<p><a class="ho" href="#">Ichika</a></p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+						<h2>Follow Us</h2><hr>
+						<p>Please contact with us to know some thing about us, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+						<a href="https://www.facebook.com/anhimdi" target="blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://accounts.google.com/SignOutOptions?hl=vi&continue=https://mail.google.com/mail&service=mail"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+	            <a href="#"><i id="social-ytb" class="fa fa-youtube-square fa-3x social"></i></a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+						<h2 style="text-align: center;">Leave Comment</h2><hr>
+						<form action="#">
+					      <label for="usr">Name:</label>
+					      <input type="text" class="form-control"  id="usr" placeholder="name">
+					      <label for="usr">Comment:</label>
+					      <textarea class="form-control" rows="5" id="comment" placeholder="your comment"></textarea>
+					      <div class="container-right">
+					      	<button type="button" class="btn btn-primary">Submit</button>
+					      </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script >
+		var index =1;
+		show(index);
+		data();
+		function push(n){
+			show(index+=n);
+		}
+		function open(){
+			document.getElementById("mySidebar").style.display="block";
+		}
+		function close() {
+			document.getElementById("mySidebar").style.display="none";
+		}
+		function data(){
+				var d = new Date();
+				var day=["Chủ nhật","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"];
+				document.getElementById("date").innerHTML="Hôm nay,"+day[d.getDay()]+" ngày "+d.getDate()+" tháng "+(d.getMonth()+1)+" năm "+d.getFullYear()+"";
+			}
+		function time(){
+				var time = new Date();
+				var gio = time.getHours();
+				var phut = time.getMinutes();
+				var giay = time.getSeconds();
+				if(gio<10){
+					gio = "0"+ gio;
+				}
+				if(phut<10){
+					phut = "0"+ phut;
+				}
+				if(giay<10){
+					giay = "0"+ giay;
+				}
+				document.getElementById("time").innerHTML=gio + ":" + phut + ":" + giay ;
+				setTimeout("time()", 1000);
+			}
+			time();
+			function show(n){
+			var x= document.getElementsByClassName("slide");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display="none";
+			}
+			if(n<1){
+				index=x.length;
+			}
+			if(n>x.length){
+				index=1;
+			}
+			x[index-1].style.display="block";
+		}
+		function opentab(n) {
+			var x =document.getElementsByClassName('tab');
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display="none";
+			}
+			document.getElementById(n).style.display="block";
+		}
+		function nav() {
+			var x = document.getElementById("nav");
+			if (x.className.indexOf("w3-show")==-1) {
+				x.className+=" w3-show"
+			}else{
+				x.className=x.className.replace(" w3-show","");
+			}
+		}
+		function showMenu() {
+			$('.sidebar>a>.title').after('<span><i class="fas fa-angle-right"></i></span>');
+			$('.sidebar').click(function() {
+				if ($(this).hasClass('active')) {
+					$(this).children('.list').slideUp();
+					$(this).removeClass('active');
+				}else{
+					$('.list').slideUp();
+					$(this).children('.list').slideDown();
+					$('.list li').removeClass('active');
+					$(this).addClass('active');
+					
+				}
+			});
+		}
+		function cart() {
+			document.getElementById("cart").style.left="95%";
+		}
+
+
+		//JQuery
+		$(document).ready(function () {
+			showMenu();
+			$('body').click(function() {
+				if (!$('#mySidebar').hasClass('bar')) {
+					$('#mySidebar').removeClass('bar');
+				}
+			});
+			$('#side').click(function() {
+				$('#mySidebar').toggleClass('bar');
+			});
+			$('#close').click(function() {
+				$('#mySidebar').addClass('bar');
+			});
+		})
+	</script>
+</body>
+</html>
