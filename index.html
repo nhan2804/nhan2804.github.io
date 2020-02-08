@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<a href="javascript:void(0)"><div class="page"><i class="far fa-arrow-alt-circle-up"></i></div></a>
 	<!-- modal -->
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top" style="max-width:600px">
@@ -403,8 +404,24 @@
 				$('#ytb').attr('src',b);
 				$('#listvideo ul li').removeClass('active1');
 				$(this).parent().addClass('active1');
+				$('body,html').animate({
+				scrollTop: 250
+				})
 				return false;
 			});
+			$('.page').click(function() {
+				$('body,html').animate({
+				scrollTop: 0
+			})
+			});
+			$(window).scroll(function () {
+			var e = $(window).scrollTop();
+			if (e > 300) {
+				$(".page").show();
+			} else {
+				$(".page").hide();
+			}
+		});
 			$('#listvideo ul li:first-child a').click();
 		})
 	</script>
