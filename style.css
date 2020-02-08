@@ -16,6 +16,9 @@
      -o-transform: scale(1.1);
     transform: rotate(350deg);
  }
+ .active1{
+     background-color: gray;
+ }
  .social {
     transform: 1s;
     opacity: 0.8;
@@ -58,6 +61,19 @@ input[name="usrname"]:focus , input[name="psw"]:focus{
     width: 250px;
     border-color: #27D31E;
     
+}
+.page{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    background-color: green;
+    z-index: 9999;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 2px 2px 2px grey
 }
 button[type="submit"]{
     border: 0;
