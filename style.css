@@ -39,7 +39,7 @@
     color: white;
     text-transform: uppercase;
 }
-.box input[type="text"] , .box input[type="password"]{
+ input[type="text"] , input[type="password"]{
     border: 0;
     display: block;
     background: none;
@@ -54,12 +54,12 @@
     transform: 0.5s;
     transition: 0.3s
 }
-.box input[type="text"]:focus , .box input[type="password"]:focus{
+input[type="text"]:focus , input[type="password"]:focus{
     width: 250px;
     border-color: #27D31E;
     
 }
-.box input[type="submit"]{
+button[type="submit"]{
     border: 0;
     display: block;
     background: none;
@@ -73,7 +73,7 @@
     border-radius: 30px;
     transform: 0.5s;
 }
-.box input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: #27D31E;
 }
 
