@@ -14,6 +14,30 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<!-- modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top" style="max-width:600px">
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+      <form class="w3-container" >
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+    </div>
+  </div>
+<!-- end modal -->
 	<!-- comment fb -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
@@ -84,46 +108,12 @@
 					<div class="w3-quarter w3-right ">
 						<div id="time" class="w3-topright"></div>
 						<div id="date" class="w3-topright"></div>
-						<a href="#" class="w3-bar-item w3-button w3-border" onclick="document.getElementById('modal').style.display='block';">Login<i class="glyphicon glyphicon-user"></i></a>
+						<a href="#" class="w3-bar-item w3-button w3-border" onclick="document.getElementById('id01').style.display='block';">Login<i class="glyphicon glyphicon-user"></i></a>
 						<a href="#" class="w3-bar-item w3-button w3-border">Re<span class="w3-tag w3-red w3-round w3-animate-fading">new</span></a>
-						<div id="modal" class="w3-modal ">
-							<div class="w3-gray w3-modal-content w3-card-4 w3-animate-top w3-card-4 w3-round" style="width: 400px;">
-							<div class="w3-container " style="position: absolute; top:200px;">
-								<div class="w3-container w3-blue w3-left w3-medium w3-round">Đăng Nhập<span class="w3-button w3-display-topright w3-gray" onclick="document.getElementById('modal').style.display='none';">Thoát <i class="far fa-window-close"></i></a>
-								</span>
-								</div>
-								<!-- Formmmmm -->
-								<div class="w3-container w3-medium box">
-									<form action="#">
-										<h1>Login</h1>
-										<input type="text" name="use" placeholder="Username" required>
-										<input type="password" name="pass" placeholder="Password" required>
-										<input type="submit" name="" value="Login">
-									</form>
-								</div>
-								<!-- <div class="w3-container w3-medium" style="margin: 0px;">
-									<form>
-									<p>
-								  <label class="w3-text-yellow">Tên tài khoản</label>
-								  <input class="w3-input" type="text"></p>
-								  <p>
-								  <label class="w3-text-yellow">Mật Khẩu</label>
-								  <input class="w3-input" type="text"></p>
-								  <p>
-								</form>
-								<div class="w3-container w3-right ">
-									<a href="#" class="w3-bar-item w3-button w3-round">Đăng nhập</a>
-									</div>
-								</div> -->
-								<!-- End Formmmmm -->
-								
-							</div>
-						</div>
 					</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		<div class="w3-bar w3-black w3-medium ">
 		<a href="#" class="w3-bar-item w3-button "><i class="fas fa-film"></i>Anime</a>
@@ -180,9 +170,7 @@
 				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.<br/><hr>
 				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.Lo<br/><hr> p.hehe
-				Nam aliquam lacinia scelerisque. Mauris ullamcorper, sapien eget ultricies maximus, lectus velit imperdiet risus, non dictum mi erat et arcu. Aenean ornare mollis nisi, quis convallis nibh efficitur nec. Donec dapibus odio diam, a commodo erat tincidunt in. Aliquam vulputate lorem ac placerat venenatis. Proin feugiat, diam eu facilisis ultrices, dolor neque aliquet lorem, id lacinia orci nunc vel magna. Curabitur dignissim fermentum est, eu semper risus tincidunt porta. Nulla posuere diam libero, in hendrerit erat mattis sit amet. Integer molestie mollis placerat. Proin a nunc quis tellus lacinia facilisis. Integer nec tincidunt lectus, quis auctor arcu.
-
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet elit porttitor, hendrerit purus sed, tincidunt felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis non est pulvinar hendrerit. Pellentesque id lacus sed augue dictum fringilla. Fusce faucibus tempus tincidunt. Morbi lacinia tellus at volutpat dapibus. Integer eget metus vitae magna ultricies ultricies. Proin a semper ante. Vestibulum vehicula tempus turpis, ac semper magna fringilla nec. Aenean ornare mi vitae lectus efficitur, ut consectetur nulla malesuada. Nunc vestibulum egestas erat ut pulvinar. Nullam vel consectetur enim. Quisque convallis quam et augue molestie, quis rutrum velit pulvinar.Lo<br/><hr>
 			</div>
 			<div class="w3-container w3-panel">
 				<h3><a href="https://www.youtube.com/watch?v=P9bAQg47i-c" target="blank" title="Youtube-Bring Back The Summer"><span><i class="fas fa-music"></i></span>  AMV - Bring Back The Summer</a></h3>
