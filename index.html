@@ -219,9 +219,9 @@
 			<h4>Truy cập nhiều  <i class="fa fa-spinner w3-spin" style="font-size:32px"></i></h4>
 		</div>
 		<div id="listvideo" class="w3-bar-block w3-card-4 w3-round" >
-			<a href="#" class="w3-bar-item w3-button ">1.Chivalry of a Failed Knight <i class="fas fa-angle-down"></i></a>
-			<ul style="padding: 0px">
-			    <li class="w3-bar-item w3-button "><a title="Sử Thi Về Hiệp Sĩ Lưu Ban Tập 1" href="https://www.youtube.com/embed/xSPSTnsMFK0?list=PL07KG8nTsPmUDuw4G2eUYCI1AReKRN7DZ">Tập <span class="w3-tag w3-gray w3-round ">1</span></a></li>
+			<a id="listtt" href="#" class="w3-bar-item w3-button ">1.Chivalry of a Failed Knight <i class="fas fa-angle-down"></i></a>
+			<ul style="padding: 0px" id="listt">
+			    <li class="w3-bar-item w3-button"><a title="Sử Thi Về Hiệp Sĩ Lưu Ban Tập 1" href="https://www.youtube.com/embed/xSPSTnsMFK0?list=PL07KG8nTsPmUDuw4G2eUYCI1AReKRN7DZ">Tập <span class="w3-tag w3-gray w3-round ">1</span></a></li>
 			    <li class="w3-bar-item w3-button"><a title="Sử Thi Về Hiệp Sĩ Lưu Ban Tập 2" href="https://www.youtube.com/embed/sPErZznjRlA">Tập <span class="w3-tag w3-gray w3-round">2</span></a></li>
 			    <li class="w3-bar-item w3-button"><a title="Sử Thi Về Hiệp Sĩ Lưu Ban Tập 3" href="https://www.youtube.com/embed/ExqQ_T4sONU">Tập <span class="w3-tag w3-gray w3-round">3</span></a></li>
 			    <li class="w3-bar-item w3-button"><a title="Sử Thi Về Hiệp Sĩ Lưu Ban Tập 4" href="https://www.youtube.com/embed/55qsuQAcfIU">Tập <span class="w3-tag w3-gray w3-round">4</span></a></li>
@@ -385,6 +385,8 @@
 
 		//JQuery
 		$(document).ready(function () {
+			$('#listt').hide();
+			$('#listtt').append('  <span class="w3-tag w3-green w3-round "> Đang phát...<i class="fas fa-check-circle"></i></span>');
 			showMenu();
 			$('body').click(function() {
 				if (!$('#mySidebar').hasClass('bar')) {
@@ -423,6 +425,9 @@
 			}
 		});
 			$('#listvideo ul li:first-child a').click();
+			$('#listvideo a').click(function() {
+				$('#listt').slideToggle(500);
+			});
 		})
 	</script>
 </body>
