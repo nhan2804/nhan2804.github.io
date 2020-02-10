@@ -111,7 +111,7 @@
 						<div id="date" class="w3-topright"></div>
 						<br>
 						<a href="#" class="w3-bar-item w3-button w3-border" onclick="document.getElementById('id01').style.display='block';">Login<i class="glyphicon glyphicon-user"></i></a>
-						<a href="javascript:void(0)" class="w3-bar-item w3-button w3-border">Re<span class="w3-tag w3-red w3-round w3-animate-fading">new</span></a>
+						<a id="re" href="javascript:void(0)" class="w3-bar-item w3-button w3-border">Re<span class="w3-tag w3-red w3-round w3-animate-fading">new</span></a>
 					</div>
 				</div>
 			</div>
@@ -434,6 +434,9 @@
 			$('#listvideo ul li:first-child a').click();
 			$('#listvideo a').click(function() {
 				$('#listt').slideToggle(500);
+			});
+			$('#re').click(function(event) {
+				alert("Có gì đâu mà bấm =))");
 			});
 		})
 	</script>
